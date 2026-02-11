@@ -561,17 +561,17 @@ body {
 }
 .step {
   padding: 2rem 1.8rem;
-  border-right: 1px solid rgba(255,255,255,0.06);
+  border-right: 1px solid rgba(255,255,255,0.2);
   position: relative;
 }
 .step:last-child { border-right: none; }
 @media (max-width: 700px) {
-  .step { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .step { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.2); }
 }
 .step-num {
   font-family: var(--heading);
   font-size: 2rem;
-  color: rgba(138, 172, 200, 0.12);
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1;
   margin-bottom: 1rem;
 }
