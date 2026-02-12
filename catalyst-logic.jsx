@@ -180,10 +180,16 @@ body {
     padding: 2rem;
     gap: 1.4rem;
     border-bottom: 1px solid var(--gray-100);
-    transform: translateY(-110%);
-    transition: transform 0.35s var(--ease);
+    transform: translateY(-150%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.35s var(--ease), opacity 0.35s var(--ease);
   }
-  .nav-links.open { transform: translateY(0); }
+  .nav-links.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+  .nav-links.open a { color: var(--gray-500); }
+  .nav-links.open a:hover,
+  .nav-links.open a.on { color: var(--ink); }
+  .nav-links.open .cta-link { color: var(--amber); }
 }
 
 /* ── Hero ── */
